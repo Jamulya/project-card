@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../../images/card-logo.svg'
 
-function CardFront() {
+function CardFront({name, number, exp}) {
   return (
     <>
         <div id="cardFrontContainer" className='h-[156px] pl-[17px] pr-[73px] mt-[-119px]'>
@@ -10,14 +10,14 @@ function CardFront() {
                     <img src={Logo} alt="Logo" />
                 </div>
                 <div id="numberContainer" className='text-white font-["Space_Grotesk"] text-[18px] font-medium tracking-[2.2px] mb-[17px]'>
-                    <p>1232344444444</p>
+                    <p>{number}</p>
                 </div>
                 <div id="nameDateWrapper" className='flex justify-between'>
                     <div id="nameContainer" className='text-white font-["Space_Grotesk"] text-[9px] font-medium tracking-[1.286px] uppercase'>
-                        <p>12</p>
+                        <p>{name}</p>
                     </div>
                     <div id="dateContainer" className='text-white font-["Space_Grotesk"] text-[9px] font-medium tracking-[1.286px]'>
-                        <p>123</p>
+                        <p>{exp}</p>
                     </div>
                 </div>
             </div>
